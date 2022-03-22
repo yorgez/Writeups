@@ -3,13 +3,13 @@
 ### Student Scoreboard: #155/1030
 ### Overall Scoreboard: #338/1938
 
-
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image6.png)
 
 ## Et tu, Hacker? (200 Points) - George Z
 
 ### Instructions: 
 The law firm of William, Ian, Laura, and Lenny (WILL for short) has just been the victim of an attempted cyber attack. Someone tried to brute force the login for one of their employees. They have the event logs of the incident, and were wondering if you could tell them which user was targeted. Flag is in the form of MetaCTF{}.
-
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image3.png)
 ### Solution: 
 MetaCTF{ericm}
 
@@ -29,7 +29,8 @@ Fortunately criminals aren't always the sharpest tool in the shed, and sometimes
 MetaCTF{how_did_the_hacker_escape_he_ransomware}
 
 After downloading and inspecting the naming convention of the file we determined it was encrypted with prometheus. With this information we utilized Crycraft Corp’s prometheus decryptor tool (github.com/cycraft-corp/Prometheus-Decryptor) and set the extension target to “png” based on the name of the original file. After a couple of minutes of bruteforce attempts, we were able to decrypt the file which gave us the unencrypted file which we could open as a png and view to retrieve the flag.
-
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image11.png)
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image4.png)
 
 
 ## Still Believe in Magic? (150 points) - George Z
@@ -42,10 +43,12 @@ MetaCTF{was_it_a_magic_trick_or_magic_bytes?}
 
 To find this flag I downloaded the file and opened it up in a text editor on my computer. This is what I saw:
 
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image1.png)
+
 From the readable text I was able to pick out that this file came from a computer running Mac OSX and that it points to two .txt files “magic.text” and “._magic.text”
 
 The name of the file clued me in that this might be a Mac “MAGIC” file so I ran the file through a MAGIC file reader on filext.com and was able to read the .txt file with the flag seen below:
-
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image5.png)
 
 
 ## Who owns the cloud? (225 Points – Reconnaissance) - George Z + Yusuf G
@@ -57,8 +60,8 @@ Take this datacenter for example. Usually it is very easy to figure out what com
 ### Solution: 
 MetaCTF{BCORE COPT DC-21 LLC}
 To find the solution we checked the Virginia state parcel records at virginiaroads.org where we were able to locate the parcel ID, but not owner, of the land the datacenter in question is located on. Then using this parcel ID we were able to check the Loudoun county property records at reparcelasmt.loudoun.gov where we found the owner listed as: “BCORE COPT DC-21 LLC”
-
-
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image2.png)
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image8.png)
 
 ## Interception (100 points - Other) - Mike F and George Z
 
@@ -68,13 +71,14 @@ ssh ctf-1@host.cg21.metaproblems.com -p 7000
 If you get an SSH host key error, consider using
 ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" ctf-1@host.cg21.metaproblems.com -p 7000
 Note that the connection can take a while to initialize. It will say Granting console connection to device... and then three dots will appear. After the third dot you should have a connection.
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image7.png)
 
 ### Solution: 
 MetaCTF{addr3s5_r3s0lut1on_pwn4g3}
 
 The hint given to us listed a useful network topology to work off of to intercept the flag sent from the .01 IP to the .02 IP.
 With this information, we determined that the .03 PC would need to spoof the ip address of the .02 PC to be able to retrieve the flag. After changing the IP address and pinging the .01 PC, the traffic was now forwarding to our instance. With a tcpdump, we were able to retrieve the following:
-
+![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image10.png)
 
 
 ## The Best Laid Plans… (200 points) - George Z
@@ -129,7 +133,7 @@ Our security team has identified evidence of ransomware deployment staging in th
 MetaCTF{METAL\timeq-admin}
 
 This flag looked for the user to retrieve the user credentials of an account that an operator had compromised. I downloaded the recovered files and looked into which account was compromised after looking into the executable script of the program.
- 
+ ![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image9.png)
 The -u stands for the username of the user. In this case, our compromised user is “timq-admin” 
 
 
