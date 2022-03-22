@@ -9,7 +9,9 @@
 
 ### Instructions: 
 The law firm of William, Ian, Laura, and Lenny (WILL for short) has just been the victim of an attempted cyber attack. Someone tried to brute force the login for one of their employees. They have the event logs of the incident, and were wondering if you could tell them which user was targeted. Flag is in the form of MetaCTF{}.
-![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image3.png)
+
+<img src="https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image3.png" alt="drawing" width="500"/>
+
 ### Solution: 
 MetaCTF{ericm}
 
