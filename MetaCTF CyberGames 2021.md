@@ -25,7 +25,7 @@ This information can be seen contained in the field “Account Name: ericm” be
 ### Instructions: 
 While the world continues to battle COVID-19, the digital world continues to battle its own epidemic - ransomware. Criminals continue to hold organizations' files hostage as they cast a wide net hacking anyone with a vulnerable device or through phishing.
 Fortunately criminals aren't always the sharpest tool in the shed, and sometimes it's possible to decrypt a ransomware file without paying the ransom. We've come across one such file - perhaps you can figure out what Ransomware strain encrypted it and a way to decrypt it?
-##Solution: 
+### Solution: 
 MetaCTF{how_did_the_hacker_escape_he_ransomware}
 
 After downloading and inspecting the naming convention of the file we determined it was encrypted with prometheus. With this information we utilized Crycraft Corp’s prometheus decryptor tool (github.com/cycraft-corp/Prometheus-Decryptor) and set the extension target to “png” based on the name of the original file. After a couple of minutes of bruteforce attempts, we were able to decrypt the file which gave us the unencrypted file which we could open as a png and view to retrieve the flag.
@@ -60,7 +60,7 @@ To find the solution we checked the Virginia state parcel records at virginiaroa
 
 
 
-##Interception (100 points - Other) - Mike F and George Z
+## Interception (100 points - Other) - Mike F and George Z
 
 ### Instructions: 
 192.168.0.1 is periodically (once every 4 seconds) sending the flag to 192.168.0.2 over UDP port 8000. Go get it.
@@ -77,7 +77,7 @@ With this information, we determined that the .03 PC would need to spoof the ip 
 
 
 
-##The Best Laid Plans… (200 points) - George Z
+## The Best Laid Plans… (200 points) - George Z
 
 ### Instructions: 
 Sometimes, routers can break packets up into fragments to meet abnormal networking requirements, and the endpoint will be responsible for putting these back together. Sometimes however, this doesn't go as planned, as Microsoft found out with CVE-2021-24074. We'd like to see the function responsible for this vulnerability, but we're having some trouble finding its name... Could you see if you could find it?
@@ -138,7 +138,7 @@ The -u stands for the username of the user. In this case, our compromised user i
 
 ### Instructions: 
 There is a form of truly unbreakable encryption: the one time pad. Nobody, not Russia, not China, and not even Steve, who lives in his mom's basement and hacks governments for fun, can decrypt anything using this cipher... as long as it's used correctly. In this scheme, a truly random string as long as the plaintext is chosen, and the ciphertext is computed as the bitwise XOR of the plaintext and the key. However, if the key is reused even once, it can be cracked. We've intercepted some messages between some criminals, and we're hoping you could crack the one time pad they used. We're pretty sure they reused it, so you should be able to crack it...
-###Ciphertext 1: 4fd098298db95b7f1bc205b0a6d8ac15f1f821d72fbfa979d1c2148a24feaafdee8d3108e8ce29c3ce1291
+### Ciphertext 1: 4fd098298db95b7f1bc205b0a6d8ac15f1f821d72fbfa979d1c2148a24feaafdee8d3108e8ce29c3ce1291
 ### Plaintext 1: 
 hey let's rob the bank at midnight tonight!
 ### Ciphertext 2: 41d9806ec1b55c78258703be87ac9e06edb7369133b1d67ac0960d8632cfb7f2e7974e0ff3c536c1871b
@@ -220,7 +220,7 @@ One of the Autobot accounts has a flag that they're trying to keep hidden from t
 MetaCTF{do_it_with_style_or_dont_do_it_at_all}
 
 Opening the website brings you to a login page asking for a username and password. To get the flag, I right-clicked the page and viewed its page source. Upon doing so, components of the webpage such as html and javascript were presented which included a list of account credentials. Since the problem mentioned one of the autobots’ accounts contained the flag, I looked for autobot names in the code. I eventually found the flag since there was a part written that is specific for Jazz and looked for the password variable: if(accounts[a].user == username && accounts[a].pwd == password) { if(username == "Jazz") result.innerHTML = "Welcome, Jazz. The flag is " + password;}.
-####There Are No Strings on Me (100 points) - Yusuf G
+## There Are No Strings on Me (100 points) - Yusuf G
 
 ### Instructions: 
 We've got this program that's supposed to check a password, and we're not quite sure how it works. Could you take a look at it and see about finding the password it's looking for?
