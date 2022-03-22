@@ -30,7 +30,7 @@ MetaCTF{how_did_the_hacker_escape_he_ransomware}
 
 After downloading and inspecting the naming convention of the file we determined it was encrypted with prometheus. With this information we utilized Crycraft Corp’s prometheus decryptor tool (github.com/cycraft-corp/Prometheus-Decryptor) and set the extension target to “png” based on the name of the original file. After a couple of minutes of bruteforce attempts, we were able to decrypt the file which gave us the unencrypted file which we could open as a png and view to retrieve the flag.
 ![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image11.png)
-![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image4.png)
+<img src="https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image4.png" alt="drawing" width="200"/>
 
 
 ## Still Believe in Magic? (150 points) - George Z
