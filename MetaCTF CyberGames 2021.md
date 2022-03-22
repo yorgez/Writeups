@@ -1,5 +1,5 @@
 # ThroughTheWire’s MetaCTF 2021 Write Up
-## Team: Mike (Lead), George, Yusuf, and Jim
+## Team: George, Mike, Yusuf, and Jim
 ### Student Scoreboard: #155/1030
 ### Overall Scoreboard: #338/1938
 
