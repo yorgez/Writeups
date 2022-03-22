@@ -1,15 +1,14 @@
-ThroughTheWire’s
- MetaCTF 2021 Write Up
-Team: Mike (Lead), George, Yusuf, and Jim
-Student Scoreboard: #155/1030
-Overall Scoreboard: #338/1938
+# ThroughTheWire’s MetaCTF 2021 Write Up
+## Team: Mike (Lead), George, Yusuf, and Jim
+## Student Scoreboard: #155/1030
+## Overall Scoreboard: #338/1938
 
-####Et tu, Hacker? (200 Points) - George Z
+## Et tu, Hacker? (200 Points) - George Z
 
-##Instructions: 
+### Instructions: 
 The law firm of William, Ian, Laura, and Lenny (WILL for short) has just been the victim of an attempted cyber attack. Someone tried to brute force the login for one of their employees. They have the event logs of the incident, and were wondering if you could tell them which user was targeted. Flag is in the form of MetaCTF{}.
 
-##Solution: 
+### Solution: 
 MetaCTF{ericm}
 
 I arrived at this solution by opening the provided event log and checking the list of events for any logged information that could tell me the account name used by the attacker.
@@ -18,7 +17,7 @@ I arrived at this solution by opening the provided event log and checking the li
 This information can be seen contained in the field “Account Name: ericm” below on event 4648 of the provided log.
 
 
-####I want my files back! (275 points - Reconnaissance) - George Z + Mike F
+## I want my files back! (275 points - Reconnaissance) - George Z + Mike F
 
 ##Instructions: 
 While the world continues to battle COVID-19, the digital world continues to battle its own epidemic - ransomware. Criminals continue to hold organizations' files hostage as they cast a wide net hacking anyone with a vulnerable device or through phishing.
