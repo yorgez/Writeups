@@ -3,7 +3,7 @@
 ### Student Scoreboard: #155/1030
 ### Overall Scoreboard: #338/1938
 
-![alt text](https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image6.png)
+<img src="https://github.com/yorgez/Writeups/blob/main/MetaCTF%202021%20Images/image6.png" alt="drawing" width="900"/>
 
 ## Et tu, Hacker? (200 Points) - George Z
 
